@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Api</name>
+    </assembly>
+    <members>
+        <member name="M:Api.Controllers.UserController.Login(Application.Login.Query)">
+             <summary>
+             Logins in a User to the Api
+            </summary>
+             <remarks>
+             Sample Request
+             POST User/login
+             {
+                 "email": "josh@icropal.com",
+                  "password": "Pa$$w0rd"
+             }
+             </remarks>
+             <param name="query"></param>
+             <returns>Some records of logged In user and Token</returns>
+             <response code="200">Return some record of logged in user and a Token</response>
+             <response code="401">Returns an authorised</response>
+             <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.ValuesController.Get">
+            <summary>
+            Get all the Values
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.ValuesController.Get(System.Int32)">
+            <summary>
+            Gets A specific Value Using the Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.ValuesController.Post(System.String)">
+            <summary>
+            Creates a New value in the Database
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:Api.Controllers.ValuesController.Put(System.Int32,System.String)">
+            <summary>
+            Edits a value Present in the database
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Api.Controllers.ValuesController.Delete(System.Int32)">
+            <summary>
+            Deletes a Value using the Id
+            </summary>
+            <param name="id"></param>
+        </member>
+    </members>
+</doc>
